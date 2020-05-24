@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>No-Frills HIIT Timer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class = "plate">
+        <p class="script"><span>No-Frills</span></p>
+        <p class="shadow text1">HIIT TIMER</p>
+        <p class="script"><span>BY GABE ST. ANGEL</span></p>
+      </div>
+      </div>
+      </header>
+      <main>
+
+        <div id = "low-intensity-input">
+          <slider-title>REST</slider-title>
+          <label for="low-sec-slider"></label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max ="300" value = "0" class="slider" id="low-sec-slider">
+          </div>
+          <div class = "time-label">
+            <p id="low-sec-label"></p>
+          </div>
+        </div>
+
+        <div id = "high-intensity-input">
+          <slider-title>WORK</slider-title>
+          <label for="high-sec-slider"></label>
+          <div class="slidecontainer">
+            <input type="range" min="1" max ="300" value = "0" class="slider" id="high-sec-slider">
+          </div>
+          <div class = "time-label">
+            <p id="high-sec-label"></p>
+          </div>
+        </div>
+        <div id="rounds-input">
+          <slider-title>ROUNDS</slider-title>
+          <div class="slidecontainer">
+            <input type="range" min="1" max ="20" value = "0" class="slider" id="rounds-slider">
+          </div>
+          <div class = "time-label">
+            <p id="rounds-label"></p>
+          </div>
+
+        </div>
+        <div id="button-box">
+
+          <button class="button" onclick="startTimer();">Start</button>
+
+        </div>
+
+          <p id="countdown" class="countdown">0.0</p>
+          <p id="intensity" class = "intensity">REST</p>
+          <p id="rounds-left" class="rounds-left">Rounds Remaining: </p>
+
+        </div>
+
+      </main>
+    </div>
+
+  </body>
+  <script src="js/main.js" charset="utf-8"></script>
+</html>
