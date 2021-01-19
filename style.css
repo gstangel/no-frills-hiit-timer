@@ -39,7 +39,7 @@ countdown
     align-items: center;
     justify-content: center;
 }
-..slidecontainer {
+.slidecontainer {
   width: 100%;
 }
 
@@ -75,8 +75,6 @@ countdown
   background: white;
   cursor: pointer;
 }
-
-
 
 body {
   background-color: #222;
